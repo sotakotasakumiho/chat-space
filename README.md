@@ -32,3 +32,29 @@ Things you may want to cover:
 ### Association
 - belongs_to :group
 - belongs_to :use
+
+## usersテーブル
+|Column|Type|Options|
+|------|----|-------|
+|email|string|null: false|
+|password|string|null: false|
+|nickname|string|null: false|
+### Association
+- has_many :group
+- has_many :message
+
+## groupテーブル
+|Column|type|Options|
+|------|----|-------|
+|name|string|null: false|
+### Association
+- has_many :users
+- has_many :massage
+
+## messageテーブル
+|Column|type|Options|
+|------|----|-------|
+|body|text|null: false|
+|image|string|null: false|
+|group_id|integer|null: false, foreign_key: true|
+|user_id|integer|null: false, foreign_key: true|
