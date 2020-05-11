@@ -1,0 +1,19 @@
+.side-bar
+  .header
+    .header__box
+      %p.header__box__name
+        masa
+      %ul.header__box__menu
+        %li.header__box__menu__edit-user
+          = link_to "#" do
+            = icon('fas','edit')
+        %li.header__box__menu__new-group
+          = link_to "#" do
+            = icon('fas','cog')
+  .groups
+    = link_to "#", class:"group" do
+      %p.group__group__name
+        test
+      %p.group__latest-massage
+        まだメッセージがありません
+  
