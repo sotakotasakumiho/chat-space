@@ -54,6 +54,10 @@
       &__latest-massage{
         font-size: 11px;
       }
+      a{
+        color: white;
+        text-decoration: none;
+      }
     }
      
   }
@@ -100,6 +104,7 @@
     height: calc(100vh - 190px);
     padding: 46px 40px;
     background-color: #fafafa;
+    overflow: auto;
     &__upper-info{
       display: flex;
       margin-bottom: 10px;
@@ -128,6 +133,7 @@
 
     form{
       display: flex;
+      position: relative;
       .input-box{
         display: flex;
         width: 100%;
@@ -142,12 +148,13 @@
         &__image{
           position: absolute;
           top: 10px;
-          right: 10px;
+          right: 125px;
           cursor: pointer;
           font-size: 1.3rem;
 
           &__file{
             display: none;
+            
           }
         }
       }
