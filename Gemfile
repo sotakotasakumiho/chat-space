@@ -68,4 +68,8 @@ group :development, :test do
   gem 'faker'
 end
 
+group :production do
+  gem 'unicorn', '5.4.1'
+end
+
 gem "jquery-rails"
