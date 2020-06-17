@@ -125,7 +125,28 @@
       margin-bottom: 10px;
     }
   }
- 
+  .message{
+    padding-bottom: 46px;
+    .upper-message{
+      display: flex;
+      margin-bottom: 12px;
+     &__user-name{
+       font-size: 16px;
+       color: #333333;
+     }
+    }
+    .upper-message__date{
+      margin-left: 12px;
+      color: #999999;
+      font-size: 12px;
+    }
+    .lower-message{
+      &__content{
+        color: #434A54;
+        font-size: 14px;
+      }
+    }
+  }
   .message-form{
     height: 90px;
     padding: 20px 40px;
@@ -164,11 +185,13 @@
         padding: 0 30px;
         margin-left: 15px;
         background-color: #38aef0;
-        color: white;
+        color: #fff;
+        font-size: 16px;
         cursor: pointer;
       }
     }
   }
 
 }
+
 
